@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 # Устанавливаем библиотеки
 RUN pip install -r requirements.txt --no-cache-dir
-
+RUN pip install gunicorn
 # Копируем весь оставшийся код бэкенда
 COPY . .
 
